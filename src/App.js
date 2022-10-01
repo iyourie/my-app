@@ -1,17 +1,11 @@
-import Article from '../src/components/article/Article'
-import Brand from '../src/components/brand/Brand'
-import Cta from '../src/components/cta/Cta'
-import Feature from '../src/components/feature/Feature'
-import Navbar from '../src/components/navbar/Navbar'
+import { Blog, Features, Footer, Header, Possibility, WhatGP3 } from './containers'
+import { Article, Brand, Cta, Feature, Navbar } from './components'
 
 let App = () => {
   return (
     <>
+      <Blog />
       <Article />
-      <Brand />
-      <Cta />
-      <Feature />
-      <Navbar />
     </>
   )
 }
