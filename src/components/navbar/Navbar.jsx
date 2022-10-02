@@ -31,12 +31,23 @@ let Navbar = () => {
                 <p>Sign in</p>
                 <button>Sign up</button>
             </div>
+
             <div className="gpt3__navbar-menu">
-                {
-                    toggleMenu
-                        ? <RiCloseLine color='white' size={26} onClick={() => setToggleMenu(false)} />
-                        : <RiMenu3Line color='white' size={26} onClick={() => setToggleMenu(true)} />
+                {toggleMenu
+                    ? <RiCloseLine color='white' size={26} onClick={() => setToggleMenu(false)} />
+                    : <RiMenu3Line color='white' size={26} onClick={() => setToggleMenu(true)} />
                 }
+                {toggleMenu && (
+                    <div className="gpt3__navbar-menu_container  scale-up-center">
+                        <div className="gpt3__navbar-menu_container-links">
+                            <Menu />
+                            <div className="gpt3__navbar-menu_container-links-sign">
+                                <p>Sign in</p>
+                                <button>Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     )
