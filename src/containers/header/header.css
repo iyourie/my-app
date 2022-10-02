@@ -1,0 +1,31 @@
+.gpt3__header {
+    display: flex;
+}
+
+.gpt3__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.gpt3__header-content h1 {
+    font-family: 'Manrope';
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    width: 614px;
+    letter-spacing: -0.04em;
+}
+
+.gpt3__header-content p {
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 400;
+    width: 554px;
+    line-height: 27px;
+    margin: 1.5rem 0;
+    color: #81AFDD;
+}
