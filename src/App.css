@@ -12,6 +12,7 @@
     --color-blog: #042c54;
     --color-text: #81AFDD;
     --color-subtext: #FF8A71;
+    --color-button: #AE67FA;
 }
 
 * {
@@ -49,13 +50,10 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-/* .section__padding {
-    padding: 4rem 6rem;
-}
 
 .section__margin {
     margin: 4rem 6rem;
-} */
+}
 
 /* animation start*/
 .scale-up-center {
@@ -94,16 +92,20 @@ a {
     .section__padding {
         padding: 4rem
     }
+
     .section__margin {
         margin: 4rem
     }
 }
+
 @media screen and (width: 550px) {
     .section__padding {
         padding: 4rem 2rem
     }
+
     .section__margin {
         margin: 4rem 2rem
     }
 }
+
 /* media queries end */

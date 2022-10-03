@@ -18,7 +18,7 @@
 
 .gpt3__header-content h1 {
     font-family: var(--font-family);
-    font-size: 62px;
+    font-size: 53px;
     font-weight: 800;
     line-height: 75px;
     letter-spacing: -0.04em;
@@ -43,7 +43,7 @@
     background: var(--color-footer);
     color: #fff;
     width: 100%;
-    flex: 2;
+    flex: 3;
     min-height: 73px;
     line-height: 27px;
     padding: 0 1rem;
@@ -59,25 +59,25 @@
 }
 
 .gpt3_header-content__input button {
-    background: #FF4820;
+    background: var(--color-button);
     color: #FFFFFF;
     font-family: var(--font-family);
     font-weight: bold;
-    font-size: 20px;
-    flex: 0.6;
+    font-size: 18px;
+    flex: 1;
     width: 100%;
     min-height: 73px;
     line-height: 27px;
     text-transform: capitalize;
     cursor: pointer;
-    border: solid #FF4820;
+    border: solid var(--color-button);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .gpt3_header-content_people {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     align-items: center;
 }
@@ -100,19 +100,13 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    transform: translate(20px,-55px);
+    -webkit-transform: translate(20px,-55px);
+    -moz-transform: translate(20px,-55px);
+    -ms-transform: translate(20px,-55px);
+    -o-transform: translate(20px,-55px);
 }
 
-@media screen and (max-width: 780px) {
-    .gpt3_header-image {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .section__padding {
-        padding: 4rem 4rem;
-    }
-}
 
 @media screen and (max-width: 830px) {
     .gpt3__header-content h1 {
@@ -142,6 +136,24 @@
     }
 }
 
+@media screen and (max-width: 780px) {
+    .gpt3_header-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem 4rem;
+    }
+}
+
+@media screen and (max-width : 612px) {
+    .gpt3_header-content__input button {
+        font-size: 11px;
+    }
+}
+
 @media screen and (max-width : 500px) {
     .section__padding {
         padding: 4rem 2rem;
@@ -160,6 +172,10 @@
     .gpt3_header-content__input button {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .gpt3_header-content__input button {
+        font-size: 9px;
     }
 
     .gpt3__header-content {
