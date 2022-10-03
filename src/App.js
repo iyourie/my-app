@@ -8,14 +8,14 @@ let App = () => {
       <div className='gradient__bg'>
         <Navbar />
         <Header />
+        <Brand />
+        <WhatGP3 />
+        <Features />
+        <Possibility />
+        <Cta />
+        <Blog />
+        <Footer />
       </div>
-      <Brand />
-      <WhatGP3 />
-      <Features />
-      <Possibility />
-      <Cta />
-      <Blog />
-      <Footer />
     </div>
   )
 }
